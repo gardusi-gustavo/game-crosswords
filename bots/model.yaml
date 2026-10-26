@@ -1,0 +1,4 @@
+game: crosswords
+contract: 1
+model: null
+baseline: solver

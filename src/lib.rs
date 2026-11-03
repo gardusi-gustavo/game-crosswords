@@ -1,1 +1,1 @@
-// Crosswords game engine — solver integration belongs in bots/.
+// Crosswords game engine — solver integration belongs in src/bots/.

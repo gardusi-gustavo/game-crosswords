@@ -1,42 +1,32 @@
 {
-  "id": "1.011",
   "rank": "1.011",
-  "type": "enhancement",
-  "title": "1.011 - Define the puzzle generator and validity contract",
-  "status": "backlog",
-  "source": "agent",
-  "author": "gardusi-gustavo-bot",
-  "created": "2026-10-29",
-  "platform": "gitea",
-  "platform_issue_id": null,
-  "platform_issue_url": null,
+  "title": "Define the puzzle generator and validity contract",
+  "context": "Define how Crosswords puzzles are generated, validated, and made reproducible.",
   "limits": {
     "max_commits": 5,
     "max_file_changes": 4
   },
-  "attempts": [],
-  "tags": [
-    "enhancement",
-    "migrated"
-  ],
-  "legacy": {
-    "issue_id": 4,
-    "url": "http://gitea.localhost:3001/games/crosswords/issues/4",
-    "author": "gardusi-gustavo-bot",
-    "created_at": "2026-10-29",
-    "labels": [
-      "enhancement"
-    ],
-    "comments_count": 0,
-    "original_rank": "1.0",
-    "original_title": "1.0 - Define the puzzle generator and validity contract",
-    "body": "## Summary\n\nDefine how Crosswords puzzles are generated, validated, and made reproducible.\n\n## Context\n\nThe repository describes a generator, solver, and bot interface but has no\ncontract for puzzle shape, word placement, uniqueness, or difficulty. Without\none, the solver, bot, and UI cannot agree on a valid puzzle.\n\n## Expected outcome\n\n- Puzzle schema: grid, entries, clues, solution.\n- Generation is seeded and reproducible.\n- Validity rules: word list, intersections, no duplicate entries, symmetry.\n- Uniqueness definition and check.\n- Difficulty model and buckets.\n- Fixture set for valid and invalid puzzles.\n\n## Out of scope\n\n- Rendering the grid.\n- Training a learned model.\n- Shipping a production word list.\n\n## Acceptance criteria\n\n- [ ] A puzzle schema is documented and versioned.\n- [ ] A seed produces the same puzzle.\n- [ ] Invalid puzzles are rejected with a reason.\n- [ ] Uniqueness is defined and checked.\n- [ ] Difficulty buckets have measurable rules.\n- [ ] At least five fixtures cover valid and invalid cases.\n- [ ] The solver and generator use the same validity check.\n\n## Plan\n\n- [ ] Write the schema and invariants.\n- [ ] Define the seeded generator interface.\n- [ ] Implement the validator.\n- [ ] Add fixtures.\n- [ ] Document difficulty.\n\n## Validation\n\n- [ ] Same seed = same puzzle.\n- [ ] A duplicate entry is rejected.\n- [ ] A disconnected grid is rejected.\n- [ ] Fixtures pass in CI.\n\n## References\n\n- Game contract: #3\n- Shared contracts: ops/templates#32\n- Tests: ops/templates#34"
-  },
   "spec": {
-    "summary": "## Summary",
-    "expected_outcome": "Migrated from Gitea issue #4; confirm scope before starting.",
+    "summary": "Define the puzzle generator and validity contract",
+    "expected_outcome": "Confirm the migrated scope and acceptance criteria.",
     "acceptance_criteria": [
-      "Review the legacy body and confirm the acceptance criteria."
+      "A puzzle schema is documented and versioned.",
+      "A seed produces the same puzzle.",
+      "Invalid puzzles are rejected with a reason.",
+      "Uniqueness is defined and checked.",
+      "Difficulty buckets have measurable rules.",
+      "At least five fixtures cover valid and invalid cases.",
+      "The solver and generator use the same validity check.",
+      "Write the schema and invariants.",
+      "Define the seeded generator interface.",
+      "Implement the validator.",
+      "Add fixtures.",
+      "Document difficulty.",
+      "Same seed = same puzzle.",
+      "A duplicate entry is rejected.",
+      "A disconnected grid is rejected.",
+      "Fixtures pass in CI."
     ]
-  }
+  },
+  "attempts": []
 }

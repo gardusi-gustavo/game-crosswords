@@ -1,0 +1,42 @@
+{
+  "id": "2.01",
+  "rank": "2.01",
+  "type": "documentation",
+  "title": "2.01 - Define word-list licensing and source policy",
+  "status": "backlog",
+  "source": "agent",
+  "author": "gardusi-gustavo-bot",
+  "created": "2026-10-29",
+  "platform": "gitea",
+  "platform_issue_id": null,
+  "platform_issue_url": null,
+  "limits": {
+    "max_commits": 5,
+    "max_file_changes": 4
+  },
+  "attempts": [],
+  "tags": [
+    "documentation",
+    "migrated"
+  ],
+  "legacy": {
+    "issue_id": 5,
+    "url": "http://gitea.localhost:3001/games/crosswords/issues/5",
+    "author": "gardusi-gustavo-bot",
+    "created_at": "2026-10-29",
+    "labels": [
+      "documentation"
+    ],
+    "comments_count": 0,
+    "original_rank": "2.0",
+    "original_title": "2.0 - Define word-list licensing and source policy",
+    "body": "## Summary\n\nRecord which word lists and clue sources Crosswords may use, under what terms,\nand whether they may be redistributed or used for training.\n\n## Context\n\nCrosswords depends on word lists and clues that are usually licensed. The\nrepository has no source registry, attribution, or redistribution rule.\n\n## Expected outcome\n\n- A source row for every word list and clue set.\n- License, attribution, and redistribution status.\n- Cache and retention rule.\n- Training-use eligibility.\n- A replacement path when a source is removed.\n\n## Out of scope\n\n- Buying a commercial dictionary.\n- Building the word list.\n- Legal advice.\n\n## Acceptance criteria\n\n- [ ] Every source has an entry in `docs/data-sources.md`.\n- [ ] Redistribution is marked yes, no, or conditional.\n- [ ] Training use is marked yes, no, or conditional.\n- [ ] Attribution is rendered where required.\n- [ ] Unclear terms default to no redistribution.\n- [ ] A source can be disabled without breaking the build.\n\n## Plan\n\n- [ ] Inventory current and planned sources.\n- [ ] Record terms and limits.\n- [ ] Add the attribution surface.\n- [ ] Add a source check to CI.\n\n## Validation\n\n- [ ] A missing source row fails the check.\n- [ ] A disabled source degrades gracefully.\n- [ ] Attribution appears in the UI.\n\n## References\n\n- External data: ops/templates#46\n- Data lifecycle: ops/templates#40"
+  },
+  "spec": {
+    "summary": "## Summary",
+    "expected_outcome": "Migrated from Gitea issue #5; confirm scope before starting.",
+    "acceptance_criteria": [
+      "Review the legacy body and confirm the acceptance criteria."
+    ]
+  }
+}

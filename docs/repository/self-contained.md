@@ -7,7 +7,7 @@ recoverable, and copyable without Gitea.
 
 - Repository: `games/crosswords`
 - Visibility: public
-- Owner: `gardusi-gustavo`
+- Owner: `human`
 - Git platform: Gitea
 - Local checkout: `~/repos/games/crosswords`
 

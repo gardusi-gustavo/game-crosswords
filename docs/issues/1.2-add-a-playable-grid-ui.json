@@ -1,0 +1,18 @@
+{
+  "rank": "1.2",
+  "title": "Add a playable grid UI",
+  "context": "The repo has no playable crossword.",
+  "limits": {
+    "max_commits": 5,
+    "max_file_changes": 4
+  },
+  "spec": {
+    "summary": "Add a minimal grid and clue list.",
+    "expected_outcome": "A player can enter letters and see completion.",
+    "acceptance_criteria": [
+      "Grid renders",
+      "Clues are linked"
+    ]
+  },
+  "attempts": []
+}
